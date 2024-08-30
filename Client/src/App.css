@@ -1,0 +1,434 @@
+body{
+ margin: 0;
+ padding: 0;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    width: 80%;
+    margin-right: 30px;
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-hero-title{
+    text-align: center;
+    width:100%;
+    color: black;
+}
+.navbar-hero-icon{
+    width: 90px;
+    height: 100px;
+    
+}
+
+.navbar-buttons{
+    display: flex;
+    gap: 8px;
+
+}
+.navbar-button{
+    display: flex;
+    /* border-top: transparent; */
+    border:none;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+.navbar-hero-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.navbar-button:hover{
+    cursor: pointer;
+    
+}
+
+.contact-btn{
+    background-color: blueviolet;
+    
+    border-radius: 4px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color:white;
+    font-weight: bolder;
+}
+.contact-btn:hover{
+    background-color: gray;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+.navbar-buttons-home {
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* add this line */
+    transition: border-bottom 0.3s ease-in-out; /* add this line */
+}
+.navbar-buttons-services {
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* add this line */
+    transition: border-bottom 0.3s ease-in-out; /* add this line */
+}
+.navbar-buttons-about {
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* add this line */
+    transition: border-bottom 0.3s ease-in-out; /* add this line */
+}
+.navbar-buttons-contact {
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* add this line */
+    transition: border-bottom 0.3s ease-in-out; /* add this line */
+}
+.navbar-buttons-home:hover{
+    border-bottom: 3px solid blueviolet;
+    color: blueviolet;
+}
+.navbar-buttons-services:hover{
+    border-bottom: 3px solid blueviolet;
+    color: blueviolet;
+}
+.navbar-buttons-about:hover{
+    border-bottom: 3px solid blueviolet;
+    color: blueviolet;
+}
+.navbar-buttons-contact:hover{
+    border-bottom: 3px solid blueviolet;
+    color: blueviolet;
+}
+
+.navlinkText{
+    text-decoration: none;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    padding: auto;
+}
+.login-section{
+    display: flex;
+    flex-direction: column;
+    padding:auto;
+    margin: auto;
+}
+.login-heading{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    scale: 1.5;
+    margin-top: 80px;
+    width: 100%;
+}
+.login-desc{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.login-details{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+.login-email{
+    border:none;
+    margin-top: 5px;
+    border-radius: 3px;
+    width: 400px;
+    height: 25px;
+    margin-left: 2px;
+}
+.email-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pass-img{
+    scale:0.7;
+}
+.email-img{
+    width: 15px;
+    height: 40px;
+}
+.input-password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:3px
+}
+.login-pass{
+    border:none;
+    margin-top: 5px;
+    border-radius: 3px;
+    width: 400px;
+    height: 25px;
+}
+.login-name{
+    border:none;
+    margin-top: 5px;
+    border-radius: 3px;
+    width: 400px;
+    height: 25px;
+}
+
+.login-btn{
+    display: flex;
+    width: 380px;
+    justify-content: center;
+    background-color: blueviolet;
+    transition: background-color 0.2s ease-in-out;
+    color: white;
+    height: 30px;
+    align-items: center;
+    border-radius: 4px;
+}
+.login-btn:hover{
+    background-color: rgb(77, 12, 138);
+    cursor: pointer;
+    color: black;
+}
+.name-input{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.forgot-pass{
+    text-decoration: none;
+    color:blueviolet;
+    cursor:auto;
+}
+.forgot-pass:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-methods-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.google-login,.facebook-login,.x-login{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.x-login{
+    gap:3px
+}
+.google-icon{
+    scale: 0.4;
+}
+.facebook-icon{
+    scale: 0.4;
+}
+.x-login{
+    scale: 129px;
+}
+.google-login, .facebook-login, .x-login {
+    position: relative;
+  }
+.google:hover, .facebook:hover, .x:hover {
+    border-bottom: transparent;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    
+}
+.google:hover, .facebook:hover, .x:hover {
+    cursor: pointer;
+    border-bottom: 2px solid blueviolet;
+    color: blueviolet;
+}
+
+.hero-content{
+    font-family: 'Nekro One',monospace;
+    color: blueviolet;
+    font-size: x-large;
+}
+.today{
+    display: flex;
+    justify-content: center;
+}
+.desc_2{
+    display: flex;
+    justify-content: center;
+}
+.hero-content-para,.desc_2{
+    font-weight: bold;
+}
+.sign-up-btn{
+    background-color: rgb(141, 11, 141);
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    color:white;
+    transition: background-color 0.3s ease-in-out;
+}
+.sign-up-btn:hover{
+    background-color: rgb(77, 12, 138);
+    cursor: pointer;
+    color: black;
+}
+.doctor-page-container{
+    display: flex;
+    flex-direction: column;    
+}
+.doctor-page-heading{
+    align-items: center;
+}
+.doctor-page-container{
+    width:830px;
+}
+.doctor-page-patient-age,.doctor-page-patient-status{
+    color: gray;
+}
+.doctor-page-patient-container{
+    border-bottom: solid rgb(128, 128, 128,0.5);
+    border-top:solid 2px;
+    border-left: solid 2px;
+    border-top-left-radius: 10px;
+    border-radius: 10px;
+    border-right: solid 1px; 
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.doctor-page-patient-container:hover{
+    scale: 1.02;
+    
+}
+.doctor-page-patient-img{
+    overflow: hidden;
+    border-radius: 10%;
+    width: 200px;
+}
+
+.patient-detail-card{
+    text-decoration: none;
+    color:black;
+}
+.patient-info-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    left: 10%;
+    height:95%;
+    margin: auto;
+    border-radius: 10px;
+    border-top: inset 2px;
+    border-left: solid 2px;
+    border-right: outset 2px;
+    border-bottom: solid 2px;
+    
+}
+.patient-info-close{
+    display: flex;
+    position: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    justify-content: center;
+}
+.patient-info-close:hover{
+    color:red;
+}
+.patient-info-name{
+    color: white;
+    display: flex;
+}
+.doctor-page-patient-info-container {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    margin: auto;
+    background-color: rgba(255, 250, 250);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(54, 8, 8, 0.2);
+    padding: 20px;
+    height: 2450px;
+}
+  .doctor-page-patient-info-container::before {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.patient-info-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100px;
+    overflow: visible;
+}
+.patient-PatientInfo-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* src/App.css */
+.app-container {
+    padding: 24px;
+    background-color: #f9fafb;
+    width: 100%;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .subheading {
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .doctor-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
