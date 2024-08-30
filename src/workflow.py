@@ -13,7 +13,7 @@ import easyocr
 import os
 import pprint
 import warnings
-from src.bot import GraphState, ocr, report, generate_summary, anamoly_detection, value_extractor, root_cause, root_cause_1 
+from src.bot import GraphState, ocr, report, generate_summary, anamoly_detection, value_extractor, root_cause, root_cause_1,Translate_Summary 
 warnings.filterwarnings("ignore", category=FutureWarning, module="torch")
 
 def graph_workflow():
@@ -22,6 +22,7 @@ def graph_workflow():
     workflow.add_node("ocr_node", ocr)
     workflow.add_node("report_node", report)
     workflow.add_node("generate_summary_node", generate_summary)
+    workflow.add_node("Translation_node",Translate_Summary)
     workflow.add_node("value_extractor_node", value_extractor)
     workflow.add_node("root_cause_node", root_cause)
     workflow.add_node("root_cause_1_node", root_cause_1)
@@ -29,9 +30,10 @@ def graph_workflow():
     workflow.add_edge(START, "ocr_node")
     workflow.add_edge("ocr_node", "report_node")
     workflow.add_edge("report_node", "generate_summary_node")
-    workflow.add_edge("generate_summary_node",END)
+    workflow.add_edge("generate_summary_node","Translation_node")
+    workflow.add_edge("Translation_node",END)
 
-    workflow.add_conditional_edges("generate_summary_node", anamoly_detection,{
+    workflow.add_conditional_edges("Translation_node", anamoly_detection,{
         "Anamoly" : "value_extractor_node",
         "Normal": "root_cause_1_node"
     })
@@ -49,6 +51,6 @@ if __name__ == "__main__":
     inputs = {"path": r"C:\Users\aashutosh kumar\OneDrive\Pictures\WhatsApp Image 2024-08-29 at 18.24.59_d9d2b06b.jpg"}
     for output in app.stream(inputs):
         for key, value in output.items():
-            # pprint(f"Node '{key}':")
+            
             pass
-    # pprint("\n---\n")
+  

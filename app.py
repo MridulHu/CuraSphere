@@ -31,8 +31,11 @@ if uploaded_file is not None:
                 st.write(value['anamoly'])
             if key == "root_cause_node":
                 st.write(value['root_cause'])
+            if key == "root_cause_1_node":
+                st.write(value['root_cause_1'])
+            if key == "Translation_node":
+                st.write(value['translation'])
             
-    # Cleanup the temporary file
     os.remove(temp_file_path)
 else:
     st.write("Please upload an image file to start the analysis.")

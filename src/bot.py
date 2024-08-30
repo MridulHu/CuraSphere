@@ -27,6 +27,7 @@ class GraphState(TypedDict):
     anamoly : str
     root_cause : str
     path : str
+    translation : str
     
 def ocr(state):
     path = state["path"]
@@ -57,6 +58,16 @@ def generate_summary(state):
     print(response)
     
     return {"summary" : response}
+
+def Translate_Summary(state):
+    lang = "telugu"
+    summary = state["summary"]
+    response = llm.invoke(f"""
+    You are a professional translator. Your task is to translate the following English summary into {lang}. 
+    Ensure that any numbers, dates, and proper nouns remain in English. 
+    Here is the summary to translate:"{summary}".""").content
+    print(response)
+    return {"translation" : response}
 
 
 def anamoly_detection(state):#this is an edge
