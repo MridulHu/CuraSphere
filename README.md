@@ -8,6 +8,8 @@ This is a collaborative project:
 
 3.https://github.com/Aditya-Raj-Kaushik/CuraSphere
 
+**Deployed Link:- https://cura-sphere-7c9b-nudunxopg-mridulhus-projects.vercel.app/**
+
 The Project consists of a Working Interface for the Problem Statement Received During the TechNova Hackathon.
 
 Problem Statement: Patients Often Struggle To Understand And Act Upon The Results Of Their Medical Reports Due To Complex Medical Terminology And Lack Of Clear Guidance. Simultaneously, Doctors Face Challenges Managing And Reviewing Large Volumes Of Patient Reports Amidst Their Busy Schedules
