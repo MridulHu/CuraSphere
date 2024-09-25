@@ -8,7 +8,7 @@ This is a collaborative project:
 
 3.https://github.com/Aditya-Raj-Kaushik/CuraSphere
 
-**Deployed Link:- https://cura-sphere-7c9b-nudunxopg-mridulhus-projects.vercel.app/**
+**Deployed Link:- https://cura-sphere-rfm4waev1-mridulhus-projects.vercel.app/**
 
 The Project consists of a Working Interface for the Problem Statement Received During the TechNova Hackathon.
 
